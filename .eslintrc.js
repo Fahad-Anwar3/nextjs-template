@@ -24,7 +24,7 @@ module.exports = {
   plugins: ["react"],
   rules: {
     // Possible errors
-    "no-console": "warn",
+    "no-console": "error",
     // Best practices
     "dot-notation": "error",
     "no-else-return": "error",
@@ -72,12 +72,12 @@ module.exports = {
       },
     ],
     "react/jsx-sort-props": [
-      "error",
+      "warn",
       {
         ignoreCase: true,
       },
     ],
-    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": 0,
     // Prettier
     // eslint looks for the prettier config at the top level of the package/app
